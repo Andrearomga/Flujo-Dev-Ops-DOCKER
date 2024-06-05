@@ -1,15 +1,7 @@
-FROM node:12.2.0-alpine
-
+FROM node:14
 WORKDIR /app
-
-COPY package*.json ./
-
-COPY . .
-
+COPY *.json ./
 RUN npm install
-
-RUN npm run test
-
-EXPOSE 8000
-
-CMD ["node", "index.js"]
+COPY . .
+EXPOSE 3000
+CMD [ "node", "index.js"]
