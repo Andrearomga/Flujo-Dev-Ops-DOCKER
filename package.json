@@ -6,10 +6,6 @@
     "test": "node index.js"
   },
 
-  "devDependencies": {
-    "mocha": "^10.4.0",
-    "supertest": "^6.1.6"
-  },
   "author": "",
   "license": "ISC",
   "description": "",
